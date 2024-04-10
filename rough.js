@@ -4,7 +4,7 @@ function BankAccount(accountNumber, balance) {
 
   this.deposit = function (amount) {
     if (amount > 0) {
-      this.balance += balance;
+      this.balance += amount;
       console.log('Deposit Successful. New Balance:', this.balance);
     } else {
       console.log('Invalid Deposit Amount');
